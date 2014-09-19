@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MobileBanking/Pages/LoginPage.xaml">
+    <Files>
+      <File FileName="MobileBanking/App.cs" Line="26" Column="26" />
+      <File FileName="MobileBanking/Color.cs" Line="6" Column="6" />
+      <File FileName="MobileBanking/ObservableObject.cs" Line="24" Column="24" />
+      <File FileName="MobileBanking/Pages/LoginPage.xaml" Line="28" Column="28" />
+      <File FileName="MobileBanking/Pages/LoginPage.xaml.cs" Line="49" Column="49" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

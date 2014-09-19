@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MobileBanking.LoginPage">
+	<ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <OnPlatform.iOS>
+                0, 20, 0, 0
+            </OnPlatform.iOS>
+            <OnPlatform.Android>
+                0, 0, 0, 0
+            </OnPlatform.Android>
+            <OnPlatform.WinPhone>
+                0, 0, 0, 0
+            </OnPlatform.WinPhone>
+        </OnPlatform>
+    </ContentPage.Padding>
+	<ContentPage.Content>
+	<ScrollView>
+		<StackLayout Padding="10">
+			<Label Text="Connect to Mobile Banking" TextColor="White" VerticalOptions="CenterAndExpand" XAlign="Center" YAlign="Center" Font="Large" />
+			<Entry Placeholder="Username"/>
+			<Entry Placeholder="Password" IsPassword="True"/>
+			<Button Text="Sign In" TextColor = "White" Command="{Binding LoginCommand}" />
+		</StackLayout>
+	</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

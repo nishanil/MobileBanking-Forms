@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MobileBanking.FundsTransferPage">
+<ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <OnPlatform.iOS>
+                0, 20, 0, 0
+            </OnPlatform.iOS>
+            <OnPlatform.Android>
+                0, 0, 0, 0
+            </OnPlatform.Android>
+            <OnPlatform.WinPhone>
+                0, 0, 0, 0
+            </OnPlatform.WinPhone>
+        </OnPlatform>
+    </ContentPage.Padding>
+<ScrollView>
+    <StackLayout>
+    <TableView>
+    	<TableView.Root>
+    	<TableSection Title="Transfer Details" >
+
+	    	<ImageCell ImageSource="fundstransfer.png" IsEnabled="false" Text="Transfering from: 00808000" />
+	    	<EntryCell Label="Account No." Keyboard="Numeric" />
+	    	<EntryCell Label="IFSC Code" Keyboard="Numeric" />
+	    	<EntryCell Label="Amount" Keyboard="Numeric" />
+
+        </TableSection>
+
+    </TableView.Root>
+
+    </TableView>
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+    <Button Text="Transfer" Command="{Binding TransferCommand}" />
+    <Button Text="Cancel" Command="{Binding CancelCommand}" />
+      </StackLayout>
+    </StackLayout>
+</ScrollView>
+</ContentPage>
